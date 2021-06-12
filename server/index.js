@@ -21,4 +21,4 @@ app.use(express.urlencoded({limit:"30mb",extended:true}));
 app.use(cors());
 
 
-app.use('/posts',postRouter);
+app.use('/posts',postRouter);//this must be below the cors use line in ortder to communicate with cross origin
